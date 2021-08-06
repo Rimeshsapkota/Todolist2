@@ -28,13 +28,7 @@ const ToDoList = () => {
     const [tasks, setTasks] = useState([]);
 
     const addTask = text => setTasks([...tasks, { text }]);
-
-    const toggleTask = index => {
-        const newTasks = [...tasks];
-        newTasks[index].isCompleted = !newTasks[index].isCompleted;
-        setTasks(newTasks);
-    };
-
+    
     const removeTask = index => {
         const newTasks = [...tasks];
         newTasks.splice(index, 1);
@@ -45,7 +39,7 @@ const ToDoList = () => {
         <div className="todo-list">
             {tasks.map((task, index) => (
                 <div className="todo">
-                    <span onClick={() => toggleTask(index)} className={task.isCompleted ? "todo-text todo-completed" : "todo-text"}>
+                    <span >
                         {task.text}
                     </span>
                     <button onClick={() => removeTask(index)}><i class="fa fa-trash-o"></i></button>
