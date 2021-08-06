@@ -26,8 +26,6 @@ const AddTaskForm = ({ addTask }) => {
 const ToDoList = () => {
 
     const [tasks, setTasks] = useState([]);
-       
-    
 
     const addTask = text => setTasks([...tasks, { text }]);
 
@@ -46,7 +44,6 @@ const ToDoList = () => {
     return (
         <div className="todo-list">
             {tasks.map((task, index) => (
-
                 <div className="todo">
                     <span onClick={() => toggleTask(index)} className={task.isCompleted ? "todo-text todo-completed" : "todo-text"}>
                         {task.text}
