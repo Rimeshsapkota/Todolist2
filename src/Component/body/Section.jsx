@@ -16,6 +16,7 @@ const AddTaskForm = ({ addTask }) => {
                 type="text"
                 value={value}
                 placeholder="Enter a title for this task…"
+                maxLength="35"
                 onChange={e => setValue(e.target.value)}
             />
             <button type="submit"><i class="fa fa-plus"></i></button>
@@ -28,7 +29,7 @@ const ToDoList = () => {
     const [tasks, setTasks] = useState([]);
 
     const addTask = text => setTasks([...tasks, { text }]);
-    
+
     const removeTask = index => {
         const newTasks = [...tasks];
         newTasks.splice(index, 1);
