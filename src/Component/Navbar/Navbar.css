@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: #833ab4; 
+    background: -webkit-linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+    background: linear-gradient(to right, #2980B9, #6DD5FA, #FFFFFF);
+    box-shadow: 10px 10px 5px grey;
+}
+    .navbar h5{
+    position: relative;
+    align-items: center;
+    top: 30px;
+}
+.navbar-brand{
+  width: 100px;
+  height: 100px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
