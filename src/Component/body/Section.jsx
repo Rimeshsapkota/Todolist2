@@ -25,16 +25,9 @@ const AddTaskForm = ({ addTask }) => {
 
 const ToDoList = () => {
 
-    const [tasks, setTasks] = useState([{
-        text: "TO",
-        isCompleted: false
-    }, {
-        text: "DO",
-        isCompleted: false
-    }, {
-        text: "LIST",
-        isCompleted: false
-    }]);
+    const [tasks, setTasks] = useState([]);
+       
+    
 
     const addTask = text => setTasks([...tasks, { text }]);
 
